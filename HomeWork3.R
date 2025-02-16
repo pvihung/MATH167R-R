@@ -98,4 +98,4 @@ print(average)
 # Standing, and it is a vector with elements "senior", "freshman", "sophomore". 
 # Use str() to display the updated list Roster
 
-Roster 
+Roster
