@@ -98,3 +98,5 @@ print(average)
 Standing = c('freshman', 'sophomore', 'junior', 'senior')
 Roster$Standing = Standing
 str(Roster)
+
+save.image()
