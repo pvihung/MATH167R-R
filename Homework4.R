@@ -56,6 +56,12 @@ write.table(new.air.pollution, quote=FALSE,
 # Write a function named end.pnt with the argument 𝑛, 
 # that produces the endpoints of the intervals including 2 and 3. 
 # You should use seq() with option along=... .
-help(seq)
-seq(2,3, along.with=rep(NA,4))
-    
+help(seq) # seq(from,to, along.with)
+          # along.with is used to take the length from the length of the arg
+help(rep) # Since we want to the length of the argument +1, we might want to set 
+          # it up with rep(x=NA,n+1), as it will provide a vector with x+1 range
+          # and along.with requires vector
+end.pnt = function(x){
+  seq(2,3, along.with=rep(NA,x+1))
+}
+end.pnt(5)
