@@ -1,0 +1,11 @@
+State,County,County FIPS Code,2010 Population
+California,Alameda County,6001,1510271
+California,Amador County,6005,38091
+California,Butte County,6007,220000
+California,Calaveras County,6009,45578
+California,Colusa County,6011,21419
+California,Contra Costa County,6013,1049025
+California,Del Norte County,6015,28610
+California,El Dorado County,6017,181058
+California,Fresno County,6019,930450
+
