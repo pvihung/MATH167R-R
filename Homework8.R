@@ -37,7 +37,7 @@ stem.leaf(spec_gravity)
 
 # I would describe the shape of the data is a little skewed and unimodal 
 # Based on the plot I create, I would say most of the data is 4* and 5*, 
-# which is just a litlte shewed 
+# which is just a little (negatively) skewed 
 # I believe it is unimodal because 
 # 4* and 5* have the highest numbers of contributor, but they are close 
 # enough to not form a new peak 
@@ -51,16 +51,22 @@ hist(spec_gravity, main='Density Histogram for gravity', breaks=seq(.3,.8,along=
 
 
 # Question 2
-# a. Create a dotplot()
+# a. Create a dot plot
 diameter = read_xlsx('DataSet\\diameters.xlsx')
-diameters = diameter$C1
-diameters
-stripchart(diameters, pch=1, method='stack', at=0, frame.plot = FALSE, xlim = c(2,14),
-           xlab='diameter', main='The dotplot for Diameters', col='blue')
-
+stripchart(diameter$C1, pch=1, method='stack', at=0, frame.plot = FALSE,
+           xlab='diameter', main='The dotplot for Diameters', col='blue', 
+           axes = FALSE, offset=0.4)
+axis(1, pos=-0.02, at=seq(2,14,2))
+# Based on the plot I created, I would say most of the data is 7, 8 and 9, which 
+# is a little (positively) skewed
+# Same with the previous question, I do think this is unimodal because its peak 
+# is at 8
 
 # b. Create a hist()
-rel.freq.h= hist(diameters, main='Relative Frequency Histogram for Diameters', 
-     xlab='diameters', ylab='relative frequency', 
-     ylim=c(0.0,0.3), xlim=c(0,14))
-rel.freq.h$counts = rel.freq.h$counts/sum(rel.freq.h)
+rel.freq.h= hist(diameters, breaks=seq(1.5,13.5,along=1.5:13.5))
+rel.freq.h$counts = rel.freq.h$counts/sum(rel.freq.h$counts)
+str(rel.freq.h)
+plot(rel.freq.h, ylim = c(0.0, 0.3), xlim=c(0,14), axes = FALSE,
+     ylab='relative frequency', xlab='diameters', main='Relative Frequency Histogram for Diameters')
+axis(1,pos=0, at=c(0,1,2,3,4,5,6,7,8,9,10,12,14))
+axis(2,pos=0, at=c(0.0,0.1,0.2,0.3), las=2)
