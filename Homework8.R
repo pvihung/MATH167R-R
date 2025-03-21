@@ -45,15 +45,22 @@ stem.leaf(spec_gravity)
 # b. Using hist() make a density plot for the gravity data
 # We know that Density = SG * 1000 
 
-hist(spec_gravity, main='Density Histogram for gravity', breaks=seq(0.2,0.9,0.1), 
+hist(spec_gravity, main='Density Histogram for gravity', breaks=seq(.3,.8,along=1:7), 
      ylab = 'Density', xlab='gravity', freq = FALSE, 
      xlim=c(0.2, 0.9), ylim=c(0,5))
 
 
 # Question 2
+# a. Create a dotplot()
 diameter = read_xlsx('DataSet\\diameters.xlsx')
 diameters = diameter$C1
 diameters
 stripchart(diameters, pch=1, method='stack', at=0, frame.plot = FALSE, xlim = c(2,14),
            xlab='diameter', main='The dotplot for Diameters', col='blue')
 
+
+# b. Create a hist()
+rel.freq.h= hist(diameters, main='Relative Frequency Histogram for Diameters', 
+     xlab='diameters', ylab='relative frequency', 
+     ylim=c(0.0,0.3), xlim=c(0,14))
+rel.freq.h$counts = rel.freq.h$counts/sum(rel.freq.h)
