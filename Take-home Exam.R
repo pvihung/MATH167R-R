@@ -59,12 +59,12 @@ b
 
 
 # c. 
-# Since we want to have 14 bars, we might want to have 15 breaks
-hist(sample_mean, breaks=seq(a, b, length=15), freq=FALSE,
+# Since we want to have 14 bars, we might want to have 14 breaks
+hist(sample_mean, breaks=seq(a, b, length=14), freq=FALSE,
      col = "gray", border = "black", 
      xlab = "Sample Means", ylab = "Density", 
      ylim=c(0.0, 3.5), axes=FALSE)
-axis(1, pos=0, at=round(seq(a,b,length.out=15),2))
+axis(1, pos=0, at=round(seq(a,b,length.out=14),2))
 axis(2, pos=a , at=seq(0, 3.5, by=0.5), las=2)
 
 # d.
