@@ -1,5 +1,0 @@
-Student.Name,Final.Grade,GPA,Class Standing 
-1,Mary Johns,B+,3.4,freshman
-2,Peter Smith,A-,3.2,sophoremore
-3,Linda Thompson,A,3.6,junior
-4,Lin Song,A,3.6,senior
