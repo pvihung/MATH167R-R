@@ -1,4 +1,5 @@
 # Statistical Programming with R
+Topics include data structures, reading and writing data, databases, data visualization, accessing and creating packages, programming structures and functions.
 
 ## About:
 This repository contains a collection of R scripts that demonstrate step-by-step solutions to a variety of statistical problems. Each script focuses on a specific topic—ranging from basic descriptive statistics and hypothesis testing to regression analysis and multivariate techniques—using core R functions and popular packages.
