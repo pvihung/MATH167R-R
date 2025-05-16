@@ -19,5 +19,5 @@ Topics include data structures, reading and writing data, databases, data visual
   
 ### Package: 
 
-####`install.packages(c("ggplot2","stats","dplyr","tidyr","write_xlsx","read_xlsx","forecast"))`
+#### `install.packages(c("ggplot2","stats","aplpack","tidyr","writexl","readxl","forecast","ggpubr"))`
 
