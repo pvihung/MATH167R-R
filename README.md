@@ -1,4 +1,5 @@
 # Statistical Programming with R
+## Topics:
 Topics include data structures, reading and writing data, databases, data visualization, accessing and creating packages, programming structures and functions.
 
 ## About this Repository:
